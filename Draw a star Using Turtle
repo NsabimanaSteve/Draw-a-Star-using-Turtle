@@ -1,0 +1,40 @@
+######################################################################
+# a05_steve.nsabimana.py
+# Author: Steve
+# Username: steve.nsabimana
+#
+# purpose:to draw a star
+######################################################################
+import turtle              #allows us to use the turtles library
+wn=turtle.Screen()         #Initialises the Screen object to draw on
+wn.bgcolor('green')        #Sets background to green
+wn.title("star")                              # Make a title
+
+s=turtle.Turtle()                            # Draws a star on the screen
+
+
+s.penup()                                     # allow the pen to move without drawing the line
+s.backward(100)                         #the pen is going to move from the center backward 100
+s.pendown()                                # allow the pen to draw the line
+s.color('white','yellow')                #set the color for pen size that is white and to fill the star that is yellow
+s.begin_fill()                               #to fill the color inside the star
+s.pensize(6)                               #Size of pen
+
+# these are the commmands that help the program to be exacuted
+
+for _ in range(2):                        # loop that help to repeat the condtion twice
+    s.forward(300)
+    s.left(120)
+s.forward(300)
+s.right(180)
+s.forward(100)
+s.left(-120)
+s.forward(200)
+s.right(-120)
+for _ in range(2):                          # loop that help to repeat the condtion twice    
+    s.forward(300)
+    s.left(120)
+s.forward(100)
+s.end_fill()                                   #to fill the colour inside the star
+wn.exitonclick()                           #allow the program to exit when i click on screen
+
